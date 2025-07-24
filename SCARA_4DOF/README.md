@@ -15,46 +15,38 @@ SCARA_4DOF/
 ├── Analysis/           % Performance and robustness analysis
 ```
 
-> 🔧 **Important**: For successful execution, place all project files inside a single folder (e.g., `SCARA_4DOF`) and run scripts from within that folder.  
-> All internal paths are relative and auto-loaded using:
->
-> ```matlab
-> addpath(genpath(fileparts(mfilename('fullpath'))));
-> ```
-
 ---
 
 ## 🎯 Features
 
-- ✅ Full dynamic model of a 4-DOF SCARA robot using Lagrangian formulation
-- ✅ Modular implementation: Modeling, simulation, and control are separated
-- ✅ Implements two nonlinear controllers:
-  - **Feedback Linearization Control (FLC)**
-  - **Sliding Mode Control (SMC)**
-- ✅ Handles **external disturbances** and **trajectory tracking**
-- ✅ Full **sensitivity analysis** over parameters, initial states, and disturbances
-- ✅ RMSE, Max Error, and Control Energy evaluation
+- ✅ Full dynamic model of a 4-DOF SCARA robot using Lagrangian formulation  
+- ✅ Modular implementation: Modeling, simulation, and control are separated  
+- ✅ Implements two nonlinear controllers:  
+  - **Feedback Linearization Control (FLC)**  
+  - **Sliding Mode Control (SMC)**  
+- ✅ Handles **external disturbances** and **trajectory tracking**  
+- ✅ Full **sensitivity analysis** over parameters, initial states, and disturbances  
+- ✅ RMSE, Max Error, and Control Energy evaluation  
 
 ---
 
 ## 🛠️ How to Run
 
-After extracting the repository and moving into the main folder (e.g., `SCARA_4DOF/`), open MATLAB in that directory and run:
+1. **Put all project files in a single folder** (regardless of their original subfolder names).  
+2. **Open MATLAB and set the current folder** to where you placed the files.  
+3. **Run one of the following scripts**:
 
 ```matlab
-scara_dynamics_sim            % Simulate one controller (FLC, SMC, or OpenLoop)
-analyze_tracking_performance  % Compare FLC and SMC tracking + energy
-sensitivity_analysis          % Perform robustness evaluation
+scara_dynamics_sim           % For simulating a specific controller
+analyze_tracking_performance % FLC vs SMC comparison and metrics
+sensitivity_analysis         % Full robustness evaluation
 ```
 
-No manual path editing is needed.
-
----
 
 ## 🧪 Dependencies
 
 - MATLAB R2021a or later recommended  
-- No special toolboxes required
+- No toolboxes required  
 
 ---
 
