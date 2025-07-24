@@ -1,6 +1,3 @@
-% Add all subfolders (Dynamics, Controllers, etc.) to MATLAB path
-addpath(genpath(fileparts(mfilename('fullpath'))));
-
 function [t, x, actual_ddq_all] = scara_dynamics_sim_compare(controller_type)
 % scara_dynamics_sim_compare - Simulates SCARA robot dynamics under various controllers.
 %
