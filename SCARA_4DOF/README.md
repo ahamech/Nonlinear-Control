@@ -69,5 +69,5 @@ This implementation is inspired by the modeling and control setup from:
 
 ## 📬 Contact
 
-Developed by: **Amirhossein Akbari**  
+Developed by: **Amir Hossein Akbari**  
 For questions, feel free to reach out or open an issue.
