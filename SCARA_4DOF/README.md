@@ -1,25 +1,26 @@
 # SCARA 4-DOF Robot – Nonlinear Control Project
 
-This project implements nonlinear control for a 4-DOF SCARA robotic manipulator based on the dynamic model presented in [this paper](https://doi.org/10.1017/S0263574723000450).
+This folder contains the complete MATLAB implementation of a nonlinear control system for a 4-DOF SCARA robotic manipulator.
 
-## ✅ Features
-- Symbolic dynamic modeling using Lagrange formulation
-- Feedback Linearization Control (FLC)
-- Sliding Mode Control (SMC)
-- Trajectory tracking and disturbance rejection
-- Sensitivity and robustness analysis
+## ✅ Highlights
+- Dynamic modeling based on Lagrangian formulation
+- Controllers:
+  - Feedback Linearization Control (FLC)
+  - Sliding Mode Control (SMC)
+- Full simulation and performance analysis
+- Sensitivity analysis under parametric, initial, and disturbance variations
 
-## 📁 Folder Structure
-- `dynamics/`: Computes M(q), C(q,dq), G(q), and Phi
+## 🧩 Folder Structure
+- `dynamics/`: Model setup and equations of motion
+- `reference/`: Desired trajectory generator
 - `controllers/`: FLC and SMC implementations
-- `simulation/`: Main simulation scripts
-- `plots/`: Output figures (position, error, torque, etc.)
-- `results/`: RMSE, control energy, max errors
-- `report/`: Technical write-up of the project
+- `simulation/`: Simulation scripts and controller switch
+- `analysis/`: RMSE, control energy, robustness testing
+- `plots/`, `results/`, `report/`: Optional outputs
+
+## 📎 Citation
+Based on: [Nonlinear optimal control for a 4-DOF SCARA robotic manipulator](https://doi.org/10.1017/S0263574723000450)
 
 ## 🛠 Requirements
-- MATLAB R2022+ (Symbolic Math Toolbox)
-- Tested on Windows/Linux
-
-## 👨‍💻 Author
-Amir Hossein Akbari
+- MATLAB R2022 or later
+- Symbolic Math Toolbox
