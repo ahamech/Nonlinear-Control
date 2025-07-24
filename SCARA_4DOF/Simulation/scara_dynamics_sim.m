@@ -1,5 +1,8 @@
 clc; clear; close all;
 
+% Add all subfolders (Dynamics, Controllers, etc.) to MATLAB path
+addpath(genpath(fileparts(mfilename('fullpath'))));
+
 % Set default font for all plots globally
 set(groot, 'defaultAxesFontName', 'Times New Roman');
 set(groot, 'defaultTextFontName', 'Times New Roman');
