@@ -1,9 +1,6 @@
 %% Full Sensitivity Analysis
 clc; clear; close all;
 
-% Add all subfolders (Dynamics, Controllers, etc.) to MATLAB path
-addpath(genpath(fileparts(mfilename('fullpath'))));
-
 rng(0);  % Fix random seed for reproducibility
 
 % Set default font for all plots globally
