@@ -1,4 +1,4 @@
-# SCARA 5-DOF Robotic Manipulator 🚀
+# SCARA 4-DOF Robotic Manipulator 🚀
 
 This folder contains a complete MATLAB implementation of modeling, control, and analysis for a **4-DOF SCARA robotic manipulator**. The system is nonlinear and includes multiple control strategies for trajectory tracking and robustness analysis.
 
