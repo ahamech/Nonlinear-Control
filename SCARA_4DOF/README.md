@@ -15,6 +15,13 @@ SCARA_4DOF/
 ├── Analysis/           % Performance and robustness analysis
 ```
 
+> 🔧 **Important**: For successful execution, place all project files inside a single folder (e.g., `SCARA_4DOF`) and run scripts from within that folder.  
+> All internal paths are relative and auto-loaded using:
+>
+> ```matlab
+> addpath(genpath(fileparts(mfilename('fullpath'))));
+> ```
+
 ---
 
 ## 🎯 Features
@@ -32,27 +39,22 @@ SCARA_4DOF/
 
 ## 🛠️ How to Run
 
-Make sure to add all subfolders to MATLAB path before running simulations. This is already handled at the top of each main script:
+After extracting the repository and moving into the main folder (e.g., `SCARA_4DOF/`), open MATLAB in that directory and run:
 
 ```matlab
-addpath(genpath(fileparts(mfilename('fullpath'))));
+scara_dynamics_sim            % Simulate one controller (FLC, SMC, or OpenLoop)
+analyze_tracking_performance  % Compare FLC and SMC tracking + energy
+sensitivity_analysis          % Perform robustness evaluation
 ```
 
-Then, you can run simulations via:
-
-```matlab
-scara_dynamics_sim           % For individual controller
-scara_dynamics_sim_compare   % FLC vs SMC comparison
-analyze_tracking_performance % RMSE, MaxError, Energy plots
-sensitivity_analysis         % Full robustness evaluation
-```
+No manual path editing is needed.
 
 ---
 
 ## 🧪 Dependencies
 
-- MATLAB R2021a or later recommended
-- No toolboxes required
+- MATLAB R2021a or later recommended  
+- No special toolboxes required
 
 ---
 
