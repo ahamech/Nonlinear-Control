@@ -1,0 +1,13 @@
+# MATLAB temporary and backup files
+*.asv
+*.fig
+*.mat
+*.mlx
+*.slx
+*.mdl
+*.log
+*.autosave
+*.user
+*.m~*
+*.bak
+*.DS_Store
